@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 99%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 334 90% 82%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 30% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 220 9% 46%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 340 30% 96%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 347 77% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 340 30% 93%;
+    --input: 340 30% 93%;
+    --ring: 334 90% 82%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { border-color: hsl(var(--border)); }
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.receipt-tear {
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% calc(100% - 8px),
+    97% 100%, 94% calc(100% - 8px), 91% 100%, 88% calc(100% - 8px),
+    85% 100%, 82% calc(100% - 8px), 79% 100%, 76% calc(100% - 8px),
+    73% 100%, 70% calc(100% - 8px), 67% 100%, 64% calc(100% - 8px),
+    61% 100%, 58% calc(100% - 8px), 55% 100%, 52% calc(100% - 8px),
+    49% 100%, 46% calc(100% - 8px), 43% 100%, 40% calc(100% - 8px),
+    37% 100%, 34% calc(100% - 8px), 31% 100%, 28% calc(100% - 8px),
+    25% 100%, 22% calc(100% - 8px), 19% 100%, 16% calc(100% - 8px),
+    13% 100%, 10% calc(100% - 8px), 7% 100%, 4% calc(100% - 8px),
+    1% 100%, 0% calc(100% - 8px)
+  );
+}

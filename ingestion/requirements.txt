@@ -1,0 +1,6 @@
+snowflake-connector-python[pandas]
+requests
+beautifulsoup4
+edgartools
+python-dotenv
+pandas
