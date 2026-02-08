@@ -198,8 +198,7 @@ export default function Company() {
       <ScoreBreakdown breakdown={data.score_breakdown} />
       <ResponseAnalysis actions_taken={data.response?.actions_taken} gaps={data.response?.gaps} />
       <Timeline events={data.timeline} />
-      <Alternatives ticker={activeTicker || ''} />
-
+      
       {/* Employee Perspective */}
       <EmployeePerspective ticker={activeTicker || ''} />
 
