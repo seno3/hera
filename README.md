@@ -2,6 +2,10 @@
 
 Workplace accountability scoring platform. Analyzes SEC filings, court records, news, EEOC data, and employee reviews to rate companies on a 1–10 accountability scale.
 
+## Full Commit History!
+
+<img width="657" height="837" alt="image" src="https://github.com/user-attachments/assets/033db238-4ac4-4e28-a02f-c8d6ff584022" />
+
 ## Architecture
 
 ```
