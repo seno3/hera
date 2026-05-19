@@ -185,6 +185,14 @@ The Vite dev server proxies `/api` requests to `localhost:3001`.
 
 ## Scripts
 
+### Frontend
+
+| Script | Command |
+|--------|---------|
+| Dev server | `npm run dev` |
+| Build | `npm run build` |
+| Preview build | `npm run preview` |
+
 ### Backend
 
 | Script | Command |
@@ -193,10 +201,3 @@ The Vite dev server proxies `/api` requests to `localhost:3001`.
 | Build | `npm run build` |
 | Production | `npm start` |
 
-### Frontend
-
-| Script | Command |
-|--------|---------|
-| Dev server | `npm run dev` |
-| Build | `npm run build` |
-| Preview build | `npm run preview` |
